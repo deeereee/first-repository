@@ -7,7 +7,9 @@ namespace seminar_1
         static void Main(string[] args)
         {
             //PERIMETERANDSQUARE();
-            Meandrirh();
+            //Meandrirh();
+            //SwapAB();
+            ZADANIE();
         }
         private static void Meandrirh()
         {
@@ -26,5 +28,27 @@ namespace seminar_1
             int S = a * a;
             Console.WriteLine($"Периметр P = {P} Площадь S = {S}");
         }
+        private static void SwapAB()
+        {
+            Console.WriteLine("Введите число a: ");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите число b: ");
+            double b = double.Parse(Console.ReadLine());
+            double c = a;
+
+        }
+        private static void ZADANIE()
+        {
+            Console.WriteLine("Введите число A: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите число B: ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите длину отрезка: ");
+            int L = int.Parse(Console.ReadLine());
+            int n = ((b - a) / L);
+            Console.WriteLine($"Отрезрк уместится {n} раз");
+        }
+
     }
+    
 }
